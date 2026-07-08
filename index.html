@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ethiopia Drinks Price Guide — Beers & Soft Drinks (2025)</title>
+    <meta
+      name="description"
+      content="A grounded, sourced price and availability guide for the 13 most popular Ethiopian lager beers plus Coca-Cola and Pepsi family soft drinks. Cost, amount, count, availability."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Serif+Ethiopic:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="flag-strip" aria-hidden="true">
+        <span class="s-green"></span>
+        <span class="s-yellow"></span>
+        <span class="s-red"></span>
+      </div>
+      <div class="hero-inner">
+        <div class="hero-badge">ETHIOPIA · 2025</div>
+        <h1>
+          The Drinks Price Guide
+          <span class="amh">የመጠጥ ዋጋ መምሪያ</span>
+        </h1>
+        <p class="lede">
+          Every lager, cola, and orange soda you'd reach for in Addis — with
+          <strong>cost</strong>, <strong>amount</strong>, <strong>count</strong>,
+          and <strong>availability</strong>, grounded in current Ethiopian market
+          data.
+        </p>
+        <div class="hero-meta">
+          <div><span class="num">13</span><span>Local Beers</span></div>
+          <div><span class="num">2</span><span>Soft-Drink Families</span></div>
+          <div><span class="num">10+</span><span>SKUs Covered</span></div>
+          <div><span class="num">ETB</span><span>Pricing Currency</span></div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-filter="all" role="tab">All Drinks</button>
+      <button class="tab" data-filter="beer" role="tab">🍺 Ethiopian Beers (13)</button>
+      <button class="tab" data-filter="coke" role="tab">🥤 Coca-Cola Family</button>
+      <button class="tab" data-filter="pepsi" role="tab">🥤 Pepsi Family (Moha)</button>
+    </nav>
+
+    <main>
+      <!-- ===================== BEERS ===================== -->
+      <section class="section" id="beers">
+        <div class="section-head">
+          <h2>Ethiopian Beers <span class="amh">የኢትዮጵያ ቢራ</span></h2>
+          <p>
+            Thirteen lagers from the country's seven operating breweries.
+            Standard bottle is <strong>330ml</strong>; the iconoclastic
+            <em>Bedele Special</em> also comes in <strong>500ml</strong>.
+            Prices are <strong>retail in Ethiopian Birr (ETB)</strong>, drawn from
+            hotel menus, deliveraddis.com, helloomarket, and trade press reports.
+          </p>
+        </div>
+
+        <div class="grid" id="beerGrid">
+          <!-- cards injected by JS -->
+        </div>
+      </section>
+
+      <!-- ===================== SOFT DRINKS ===================== -->
+      <section class="section soft" id="soft">
+        <div class="section-head">
+          <h2>Soft Drinks <span class="amh">ለስላሳ መጠጦች</span></h2>
+          <p>
+            Two families dominate Ethiopia's bottled carbonates — Coca-Cola
+            (bottled by CCBA Ethiopia, full national reach) and Pepsi (bottled
+            by <strong>Moha Soft Drinks Industry S.C.</strong>, currently
+            disrupted). All figures below in ETB.
+          </p>
+        </div>
+
+        <div class="callout warn" id="mohaWarn">
+          <strong>⚠️ Update on Pepsi / Moha (Dec 2024 – 2025):</strong>
+          Per <em>The Reporter Ethiopia</em>, all eight Moha plants have been
+          halted for over a year because of Ethiopia's foreign-exchange
+          shortage — the company can't import syrup, bottles, crates, or spare
+          parts. Pepsi, 7-Up, and Mirinda stock is therefore
+          <strong>sporadic at retail</strong>; legacy wholesale price lists
+          still circulate. We show the last published RRP and flag
+          availability.
+        </div>
+
+        <h3 class="sub">Coca-Cola Family — CCBA Ethiopia</h3>
+        <div class="grid" id="cokeGrid"></div>
+
+        <h3 class="sub">Pepsi Family — Moha Soft Drinks Industry S.C.</h3>
+        <div class="grid" id="pepsiGrid"></div>
+      </section>
+
+      <!-- ===================== HOW TO READ ===================== -->
+      <section class="section howto" id="howto">
+        <div class="section-head">
+          <h2>How to read the cards</h2>
+        </div>
+        <div class="how-grid">
+          <div class="how-card">
+            <span class="how-key">Cost</span>
+            <p>
+              Recommended retail in ETB at bottle / can / crate level. Draft
+              ("<em>jambo</em>" ≈ 400ml) usually runs 5–8 ETB less than the
+              bottled price.
+            </p>
+          </div>
+          <div class="how-card">
+            <span class="how-key">Amount</span>
+            <p>
+              The single-serve volume — typically 330ml bottles for beer,
+              300ml glass / 330ml PET / 500ml PET / 1L / 1.5L / 2L for soft
+              drinks.
+            </p>
+          </div>
+          <div class="how-card">
+            <span class="how-key">Count</span>
+            <p>
+              Standard pack-out: a <strong>crate</strong> is 24 × 330ml for
+              beer; soft drinks ship in 6-, 12-, 24- or 30-bottle cases
+              depending on format.
+            </p>
+          </div>
+          <div class="how-card">
+            <span class="how-key">Availability</span>
+            <p>
+              Where and how reliably it sells — nationwide, regional, draft,
+              or currently constrained. Bars, supermarkets, kiosks,
+              restaurants, hotels.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== SOURCES ===================== -->
+      <section class="section sources" id="sources">
+        <div class="section-head">
+          <h2>Sources &amp; disclaimers</h2>
+          <p>
+            Pricing collected from Ethiopian hospitality price lists,
+            deliveraddis.com, helloomarket, hellooomarket Telegram, The
+            Reporter Ethiopia, Brauwelt, Addis Fortune, Addis Standard, Wine
+            Searcher, Numbeo, Expatistan, and direct brewery pages.
+            Ethiopia has no centralized public price list — these are
+            <strong>indicative retail figures</strong> as of late 2025; actual
+            bar and kiosk prices vary by city, channel, and inflation.
+            Alcohol sales restricted to persons <strong>21+</strong>.
+          </p>
+        </div>
+        <ul class="source-list">
+          <li>thereporterethiopia.com — brewery price moves, Moha shutdown</li>
+          <li>mohasoftdrinks.com — official Moha / Pepsi portfolio</li>
+          <li>howwemadeitinafrica.com — Ethiopia beverage market overview</li>
+          <li>dashenbreweries.com / habeshabreweries.com / heinekenethiopia.com</li>
+          <li>en.wikipedia.org/wiki/Beer_in_Ethiopia</li>
+          <li>deliveraddis.com, helloomarket, hellooomarket Telegram — live retail</li>
+          <li>numbeo.com / expatistan.com — soft-drink cost-of-living data</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="foot-inner">
+        <div>
+          <strong>Ethiopia Drinks Price Guide</strong> · built July 2026 ·
+          data window: late 2024 – 2025
+        </div>
+        <div class="foot-tag">🇪🇹 <span class="amh">ጤና ይስጥልን · cheers</span></div>
+      </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
